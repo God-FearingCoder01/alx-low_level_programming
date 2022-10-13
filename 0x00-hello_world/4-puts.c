@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-/** 
+/**
  * main - Entry point
- * 
+ *
  * main - outputs a message on screen
  * Return: Alwaus 0 (Success)
  */
