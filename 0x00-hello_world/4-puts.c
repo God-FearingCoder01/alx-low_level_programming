@@ -1,7 +1,13 @@
 #include<stdio.h>
-/* Entry point*/
-int main(void) 
+
+/** 
+ * main - Entry point
+ * 
+ * main - outputs a message on screen
+ * Return: Alwaus 0 (Success)
+ */
+int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+  puts("\"Programming is like building a multilingual puzzle");
+  return (0);
 }
