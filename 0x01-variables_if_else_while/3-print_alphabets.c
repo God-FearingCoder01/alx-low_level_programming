@@ -13,7 +13,7 @@ int main(void)
 		putchar(x);
 
 	for (x = 65; x <= 90; x++)
-		putcha(x);
+		putchar(x);
 	putchar('\n');
 	return (0);
 }
