@@ -10,7 +10,11 @@ int main(void)
 	int x;
 
 	for (x = 48; x <= 57; x++)
-		putchar(x, ", ");
+	{		
+		putchar(x);
+		putchar(44);
+		putchar(32);
+	}
 	putchar('\n');
 	return (0);
 }
