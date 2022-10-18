@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	double i, j, n;
+	long double i, j, n;
 	int k;
 
 	i = 1;
