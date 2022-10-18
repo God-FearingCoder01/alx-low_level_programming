@@ -10,10 +10,12 @@
 int _islower(int c)
 {
 	int i;
+	char temp;
 
 	for (i = 97; i < 123; i++)
 	{
-		if (c == _putchar(i))
+		temp = _putchar(i);
+		if (c == temp)
 			return (1);
 	}
 	
