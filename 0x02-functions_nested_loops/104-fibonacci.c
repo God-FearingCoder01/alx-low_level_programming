@@ -18,7 +18,7 @@ int main(void)
 	i = 1;
 	j = 2;
 
-	printf("%lu, %lu", i, j);
+	printf("%lu, %lu, ", i, j);
 
 	for (k = 1; k < 97; k++)
 	{
