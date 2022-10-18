@@ -20,7 +20,7 @@ int main(void)
 
 	printf("%lu, %lu", i, j);
 
-	for (k = 1; k < 97; k++)	
+	for (k = 1; k < 97; k++)
 	{
 		if (i + j > LARGEST || a > 0 || b > 0)
 		{
