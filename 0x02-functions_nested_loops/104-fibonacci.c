@@ -9,18 +9,18 @@
  */
 int main(void)
 {
-	double i, j, n;
+	long i, j, n;
 	int k;
 
 	i = 1;
 	j = 2;
 
-	printf("%.0f, %.0f", i, j);
+	printf("%ld, %ld", i, j);
 
-	for (k = 1; k < 49; k++)
+	for (k = 1; k < 97; k++)
 	{
 		n = i + j;
-		printf(", %.0f", n);
+		printf(", %ld", n);
 		i = j;
 		j = n;
 	}
