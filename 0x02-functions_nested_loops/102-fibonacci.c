@@ -9,7 +9,8 @@
  */
 int main(void)
 {
-	int i, j, k, n;
+	long long i, j, n;
+	int k;
 
 	i = 1;
 	j = 2;
@@ -22,8 +23,7 @@ int main(void)
 		printf("%d, ", n);
 		i = j;
 		j = n;
-	}
-	
+	}	
 	printf("\n");
 
 	return (0);
