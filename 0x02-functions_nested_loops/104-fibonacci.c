@@ -22,13 +22,13 @@ int main(void)
 
 	for (k = 1; k < 97; k++)	
 	{
-		if ( i + j > LARGEST || a > 0 || b > 0)
+		if (i + j > LARGEST || a > 0 || b > 0)
 		{
 			q = (i + j) / LARGEST;
 			n = (i + j) % LARGEST;
 			r = a + b + q;
 			a = b, b = r;
-			i = j; j = n;
+			i = j, j = n;
 			printf("%lu%010lu", b, j);
 		}
 		else
