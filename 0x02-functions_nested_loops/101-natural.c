@@ -16,7 +16,7 @@ int main(void)
 
 	for (counter = 0; counter < 1024; counter++)
 	{
-		if (counter % 3 == 0 || coounter % 5 == 0)
+		if (counter % 3 == 0 || counter % 5 == 0)
 			sum += counter;
 	}
 
