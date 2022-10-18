@@ -29,5 +29,5 @@ int main(void)
 
 	printf("%ld\n", s);
 
-	return {0};
+	return (0);
 }
