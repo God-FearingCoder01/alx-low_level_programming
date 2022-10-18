@@ -38,7 +38,7 @@ int main(void)
 			i = j, j = n;
 		}
 
-		if (count != 96)
+		if (k != 96)
 			printf(", ");
 	}
 
