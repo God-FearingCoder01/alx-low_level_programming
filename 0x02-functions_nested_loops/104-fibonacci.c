@@ -15,12 +15,12 @@ int main(void)
 	i = 1;
 	j = 2;
 
-	printf("%Lf, %Lf", i, j);
+	printf("%.0Lf, %.0Lf", i, j);
 
 	for (k = 1; k < 97; k++)
 	{
 		n = i + j;
-		printf(", %Lf", n);
+		printf(", %.0Lf", n);
 		i = j;
 		j = n;
 	}
