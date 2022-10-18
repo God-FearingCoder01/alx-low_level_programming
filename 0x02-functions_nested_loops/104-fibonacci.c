@@ -9,18 +9,18 @@
  */
 int main(void)
 {
-	unsigned double i, j, n;
+	double i, j, n;
 	int k;
 
 	i = 1;
 	j = 2;
 
-	printf("%.0u, %.0u", i, j);
+	printf("%.0Lf, %.0Lf", i, j);
 
 	for (k = 1; k < 97; k++)
 	{
 		n = i + j;
-		printf(", %.0u", n);
+		printf(", %.0Lf", n);
 		i = j;
 		j = n;
 	}
