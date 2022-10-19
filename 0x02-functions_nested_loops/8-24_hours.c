@@ -8,7 +8,7 @@
 
 void jack_bauer(void)
 {
-	int counter, m, h;
+	int counter, m, h, fd, sd;
 
 	for (counter = 0; counter < 1440; counter++)
 	{
@@ -21,18 +21,25 @@ void jack_bauer(void)
 			_putchar(h + 48);
 		}
 		else
-			_putchar(h);
+		{
+			fd = h / 10, sd = h % 10;
+			_putchar(fd + 48);
+			_putchar(sd + 48);
+		}
 
 		_putchar(':');
 
 		if (m < 10)
 		{
 			_putchar('0');
-			_putchar(m);
+			_putchar(m + 48);
 		}
 		else
-			_putchar(m);
-
+		{
+			fd = m / 10, sd = m % 10;
+			_putchar(fd + 48);
+			_putchar(sd + 48);
+		}
 		_putchar('\n');
 	}
 }
