@@ -18,8 +18,9 @@ void jack_bauer(void)
 		if (h < 10)
 		{
 			_putchar('0');
-			_putchar(h);
-		}else
+			_putchar(h + 48);
+		}
+		else
 			_putchar(h);
 
 		_putchar(':');
@@ -28,7 +29,8 @@ void jack_bauer(void)
 		{
 			_putchar('0');
 			_putchar(m);
-		}else
+		}
+		else
 			_putchar(m);
 
 		_putchar('\n');
