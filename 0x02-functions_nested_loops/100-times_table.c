@@ -6,26 +6,27 @@
  *
  * Description: If n is greater than 15 or less than 0,
  *		function should not print anything.
- * Return: 0 (Success)
  */
 
 void print_times_table(int n)
 {
 	int rowCount, columnCount;
 
-	for (rowCount = 0; rowCount <= n; rowCount++)
+	if (!((n > 15) || (n < 0)))
 	{
-		for (columnCount = 0; columnCount <= n; columnCount++)
+		for (rowCount = 0; rowCount <= n; rowCount++)
 		{
-			_putchar(rowCount * columnCount);
-			if (columnCount != n)
+			for (columnCount = 0; columnCount <= n; columnCount++)
 			{
-				_putchar(',');
-				_putchar(' ');
+				_putchar(rowCount * columnCount);
+				if (columnCount != n)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 
-	return (0);
 }
