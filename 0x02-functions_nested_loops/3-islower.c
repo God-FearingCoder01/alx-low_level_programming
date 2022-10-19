@@ -2,6 +2,7 @@
 
 /**
  * _islower - checks for lowercase character.
+ * @c: The character to print
  *
  * Description: checks for lowercase character
  * Return: 1 if c is lowercase, otherwise 0
@@ -9,13 +10,11 @@
 
 int _islower(int c)
 {
-	int i;
-	char temp;
+	char i;
 
-	for (i = 97; i < 123; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		temp = _putchar(i);
-		if (c == temp)
+		if (i == c)
 			return (1);
 	}
 	
