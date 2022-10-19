@@ -3,6 +3,7 @@
 /**
  * print_times_table - prints the n time table,
  * starting with 0.
+ * @n: the number input
  *
  * Description: If n is greater than 15 or less than 0,
  *		function should not print anything.
