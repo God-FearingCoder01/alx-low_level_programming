@@ -8,7 +8,7 @@
 
 void jack_bauer(void)
 {
-	int counter, mins, hours;
+	int counter, m, m;
 
 	for (counter = 0; counter < 1440; counter++)
 	{
