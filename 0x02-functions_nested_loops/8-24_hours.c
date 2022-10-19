@@ -13,7 +13,7 @@ void jack_bauer(void)
 	for (counter = 0; counter < 1440; counter++)
 	{
 		m = counter;
-		h = mins / 60;
+		h = m / 60;
 		m %= 60;
 		if (h < 10)
 		{
