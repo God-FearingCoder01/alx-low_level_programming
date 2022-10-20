@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	unsigned long n = 612852475143;
+	unsigned long n = 612852475143 / 2;
 	unsigned long i = 2;
 	unsigned long largest = 0;
 
@@ -25,7 +25,7 @@ int main(void)
 			}
 			i = 1;
 		}
-		i++;
+		i = i + 1;
 	}
 
 	printf("%d\n", largest);
