@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * mode_numbers - prints 10 times the numbers 0 to 14,
- * followed by a new line
+ * more_numbers - prints 10 times the numbers 0 to 14,
+ * follwed by a new line.
+ * Descripiton: you can use _putchar three times only.
  */
 
 void more_numbers(void)
