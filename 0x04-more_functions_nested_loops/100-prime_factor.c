@@ -28,7 +28,7 @@ int main(void)
 		i = i + 1;
 	}
 
-	printf("%d\n", largest);
+	printf("%llu\n", largest);
 
 	return (0);
 }
