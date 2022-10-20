@@ -11,9 +11,9 @@
 
 int main(void)
 {
-	unsigned long n = 612852475143 / 2;
-	unsigned long i = 2;
-	unsigned long largest = 0;
+	long long int n = 612852475143 / 2;
+	long long int i = 2;
+	long long int largest = 0;
 
 	while (n != 1)
 	{
