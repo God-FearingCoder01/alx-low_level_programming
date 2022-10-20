@@ -18,7 +18,7 @@ void more_numbers(void)
 			if (m > 58)
 			{
 				_putchar(49);
-				if (m == 58)
+				if (m == 59)
 					k = 0, c = 48;
 			}
 			_putchar(c);
