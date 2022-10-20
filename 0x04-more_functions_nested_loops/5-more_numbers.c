@@ -15,14 +15,14 @@ void more_numbers(void)
 		for (j = 0; j <= 14; j++)
 		{
 			c = 48 + k, m += 1;
-			if (m > 57)
+			if (m > 58)
 			{
 				_putchar(49);
 				if (m == 58)
 					k = 0, c = 48;
 			}
 			_putchar(c);
-			k++;
+			k += 1;
 		}
 		k = 0, m = 48;
 		_putchar('\n');
