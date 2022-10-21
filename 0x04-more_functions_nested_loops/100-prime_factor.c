@@ -23,8 +23,8 @@ int main(void)
 			{
 				largest = i;
 			}
-			i = 1;
 			n = n / i;
+			i = 1;
 		}
 		i = i + 1;
 	}
