@@ -46,7 +46,7 @@ void print_number(int n)
 				_putchar((num / m) + '0');
 				if ((num > m) && (m != 1))
 				{
-					num -= m;
+					num -= (m * (num / m));
 				}
 				m /= 10;
 			}
