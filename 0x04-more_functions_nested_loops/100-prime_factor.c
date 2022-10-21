@@ -11,9 +11,9 @@
 
 int main(void)
 {
-	unsigned long int n = 612852475143 / 2;
-	unsigned long int i = 2;
-	unsigned long int largest = 0;
+	long long int n = 612852475143 / 2;
+	long long int i = 2;
+	long long int largest = 0;
 
 	while (n != 1)
 	{
@@ -29,7 +29,7 @@ int main(void)
 		i = i + 1;
 	}
 
-	printf("%lu\n", largest);
+	printf("%lld\n", largest);
 
 	return (0);
 }
