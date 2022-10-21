@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	long long n = 612852475143 / 2;
+	long long n = 612852475143;
 	long long i = 2;
 	long long largest = 0;
 
