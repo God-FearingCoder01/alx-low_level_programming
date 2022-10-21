@@ -37,9 +37,9 @@ void print_number(int n)
 		else
 		{
 			_putchar((num / m) + '0');
-			m /= 10;
 			if (num > m && m != 1)
-				num = num - m;
+				num = num - ((num / m) * m);
+			m /= 10;
 		}
 	}
 }
