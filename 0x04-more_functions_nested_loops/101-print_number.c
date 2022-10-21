@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
  * print_number - prints an integer
  * @n: an integer to be printed
  */
-
 void print_number(int n)
 {
 	int m = 1, c = 1, num = n;
@@ -14,7 +12,6 @@ void print_number(int n)
 		num *= -1;
 		_putchar('-');
 	}
-
 	while (c)
 	{
 		if ((num / (m * 10)) > 0)
@@ -26,7 +23,6 @@ void print_number(int n)
 			c = 0;
 		}
 	}
-
 	while (num >= 0)
 	{
 		if (num == 0)
