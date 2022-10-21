@@ -11,9 +11,9 @@
 
 int main(void)
 {
-	long long int n = 612852475143 / 2;
-	long long int i = 2;
-	long long int largest = 0;
+	long long n = 612852475143 / 2;
+	long long i = 2;
+	long long largest = 0;
 
 	while (n != 1)
 	{
