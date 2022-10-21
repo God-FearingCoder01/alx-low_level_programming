@@ -36,13 +36,16 @@ void print_number(int n)
 	{
 		if (m == 1)
 		{
-			_putchar(num % 10 + '0');
 			num = -1;
 		}
 		else
 		{
-			_putchar((num / m % 10) + '0');
 			m /= 10;
+			_putchar((num / m) + '0');
+			if (num > m)
+			{
+				num = num - m;
+			}
 		}
 	}
 }
