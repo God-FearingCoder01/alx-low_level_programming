@@ -15,13 +15,9 @@ void print_number(int n)
 	while (c)
 	{
 		if ((num / (m * 10)) > 0)
-		{
 			m *= 10;
-		}
 		else
-		{
 			c = 0;
-		}
 	}
 	while (num >= 0)
 	{
@@ -41,9 +37,7 @@ void print_number(int n)
 			{
 				_putchar((num / m) + '0');
 				if ((num > m) && (m != 1))
-				{
 					num -= (m * (num / m));
-				}
 				m /= 10;
 			}
 		}
