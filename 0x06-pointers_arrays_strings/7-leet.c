@@ -2,27 +2,38 @@
 
 /**
  * leet - encode a string into 1337
- * @s: string
+ * @arry: string to be encoded
  * Return: encoded string `s`
  */
 
-char *leet(char *s)
+char *leet(char *arry)
 {
-	int i;
+	int index = 0;
+	char myArry[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int myIndex;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (arry[index] != '\0')
 	{
-		while (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+		myIndex = 0;
+
+		while (arry[index] != myArray[myIndex] && myIndex < 10)
+			myIndex++;
+
+		if (myIndex > 9)
+			;
+		else if (myIndex > 7)
+			arry[index] = 49;
+		else if (myIndex > 5)
+			arry[index] = 55;
+		else if (myIndex > 3)
+			arry[index] = 48;
+		else if (myIndex > 1)
+			arry[index] = 51;
+		else
+			arry[index] = 52;
+
+		index++;
 	}
 
-	return (s);
+	return (arry);
 }
