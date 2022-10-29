@@ -9,8 +9,8 @@
 char *leet(char *arry)
 {
 	int index = 0;
-	char myArry[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char myNums[] = {'4', '3', '0', '1', '7'}
+	char myArray[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	char myNums[] = {'4', '3', '0', '7', '1'};
 	int myIndex;
 
 	while (arry[index] != '\0')
