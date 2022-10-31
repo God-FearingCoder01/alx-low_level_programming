@@ -2,7 +2,7 @@
 
 /**
  * *_memset - fills memory with a constant byte
- * @s: hh
+ * @s: buffer array
  * @b: ss
  * @n: jj
  * Return: pointer
@@ -10,15 +10,13 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int counter = 0;
 
-	while (*(s + counter) != '\0' && counter < n)
+	while (n > 0)
 	{
 		s[counter] = b;
 		counter++;
+		n--;
 	}
-
-	s[counter] = '\0';
 
 	return (s);
 }
