@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _sqrt_recursion - computes the natural squar root
  * of a number
@@ -21,7 +23,7 @@ int _sqrt_recursion(int n)
 
 int helper_func(int c, int i)
 {
-	int their_sqaure;
+	int their_square;
 
 	their_square = i * i;
 	if (their_square == c)
