@@ -11,7 +11,7 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *yolo;
-	
+
 	yolo = dest;
 	while (n > 0)
 	{
