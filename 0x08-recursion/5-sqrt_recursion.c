@@ -27,7 +27,7 @@ int helper_func(int c, int i)
 
 	their_square = i * i;
 	if (their_square == c)
-		return (1);
+		return (i);
 	else if (their_square < c)
 		return (helper_func(c, i + 1));
 	return (-1);
