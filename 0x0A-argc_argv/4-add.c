@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+int get_array_size(char *arry);
+int number_contains_symbols(char *arr);
+
 /**
  * main - entry point
  * Descrription: adds positive numbers, prints
@@ -10,7 +13,6 @@
  * @argv: string of arguments passed
  * Return: 0 (onsuccess0
  */
-
 
 int main(int argc, char **argv)
 {
