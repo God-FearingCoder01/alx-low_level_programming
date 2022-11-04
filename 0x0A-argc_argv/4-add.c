@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	int k;
 
 	if (argc == 1)
-		printf("%i", 0);
+		printf("%i\n", 0);
 	else
 	{
 		for (k = 1; k < argc; k++)
@@ -29,14 +29,14 @@ int main(int argc, char **argv)
 			if (number_contains_symbols(argv[k]))
 			{
 				printf("Error\n");
-				return (0);
+				return (1);
 			}
 			else
 			{
 				sum_result += argv[k];
 			}
 		}
-		printf("%i", sum_result);
+		printf("%i\n", sum_result);
 	}
 	return (0);
 }
@@ -52,6 +52,7 @@ int main(int argc, char **argv)
 int number_contains_symbols(char *arr)
 {
 	int len_argvElement, char_number, loop_counter;
+	char i;
 
 	len_argvElement = get_array_size(arr);
 
