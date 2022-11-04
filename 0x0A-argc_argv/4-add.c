@@ -6,24 +6,11 @@
  *		the result followed by a new line.
  *		If no number is passed to the program,
  *		prints 0, followed by a new line
- *		If one of the number contains symbols
- *		that are not digits, prints "Error",
- *		followed by a new line, and return 1.
- *		You can assume that numbers and the addition
- *		of all the numbers can be stored in an int
  * @argc: number of arguemenst apssed
  * @argv: string of arguments passed
- * number_contains_symbols - checeks if a given string literal
- * whichi is supposed ot be composed of numbers only, contains
- * any other symbols other tahn numbers
- * @arr: the string to be checked for symbols
- * get_array_size - finc the length of agiven array or string
- * @arry: name of array to be used
  * Return: 0 (onsuccess0
  */
 
-int get_array_size(char *arry);
-int number_contains_symbols(char *arr);
 
 int main(int argc, char **argv)
 {
