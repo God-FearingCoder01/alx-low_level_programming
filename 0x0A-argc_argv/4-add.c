@@ -58,7 +58,7 @@ int number_contains_symbols(char *arr)
 
 	char_number = loop_counter = 0;
 
-	for (i = '0'; i <= '9' || char_number < len_argvElement; i++)
+	for (i = '0'; i <= '9' && char_number < len_argvElement; i++)
 	{
 		if (*arr == i)
 		{
