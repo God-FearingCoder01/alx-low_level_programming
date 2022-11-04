@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int get_array_size(char *arry);
 int number_contains_symbols(char *arr);
