@@ -28,8 +28,8 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		result = atoi(argv[argc - 1]) * atoi(argv[argc - 2]);
-		printf("%i", result);
+		result = atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", result);
 	}
 
 	return (0);
