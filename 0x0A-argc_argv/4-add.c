@@ -51,20 +51,19 @@ int main(int argc, char **argv)
 
 int number_contains_symbols(char arr[])
 {
-	int len_argvElement, char_number, loop_counter, arr_index;
+	int len_argvElement, char_number, loop_counter;
 	char i;
 
 	len_argvElement = get_array_size(arr);
 
-	char_number = loop_counter = arr_index = 0;
+	char_number = loop_counter = 0;
 
 	for (i = '0'; i <= '9' && char_number < len_argvElement; i++)
 	{
-		if (arr[arr_index] == i)
+		if (arr[char_number] == i)
 		{
-			arr_index++;
 			char_number++;
-			loop_counter = -1;
+			loop_counter = 0;
 			i = '0';
 		}
 		else if (loop_counter == 9)
