@@ -30,7 +30,7 @@ printf("Error\n");
 return (1);
 }
 else if (*argv[1] == '-')
-printf("%i", 0);
+printf("%i\n", 0);
 else
 {
 cents = atoi(argv[1]);
