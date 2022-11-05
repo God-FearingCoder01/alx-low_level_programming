@@ -29,17 +29,14 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-else
-{
-cents = atoi(argv[1]);
-if (cents < 0)
+else if (*argv[1] == '-')
 printf("%i", 0);
 else
 {
+cents = atoi(argv[1]);
 minimum_number_of_coins = calculate_minimum_coins(cents);
-}
-}
 printf("%i\n", minimum_number_of_coins);
+}
 return (0);
 }
 
