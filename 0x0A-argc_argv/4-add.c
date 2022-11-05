@@ -62,7 +62,7 @@ int number_contains_symbols(char *arr)
 	{
 		if (*arr == i)
 		{
-			arr++;
+			*arr++;
 			char_number++;
 			loop_counter = -1;
 			i = '0';
