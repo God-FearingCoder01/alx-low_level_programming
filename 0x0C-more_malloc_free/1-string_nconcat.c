@@ -1,46 +1,58 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * string_nconcat - concatenates two strings
- * @s1: the destinatio  string
- * @s2: the source string
- * @n: the number of character to be copied from @s2
- * Description: if the function fails, it whould return
- *		'NULL'. If n is greater or equal to the length
- *		of @s2 then use the entire string @s2. If 'NULL'
- *		is passed, treat it as an empty string.
- * Return: pointer to a newly allocated space in memory,
- *	which contains @s1, followed by the first n bytes of
- *	@s2, and null terminated.
+ * string_nconcat - concatenate 2 strings, only n bytes of s2
+ * @s1: string 1
+ * @s2: string 2
+ * @n: bytes to include of s2
+ * Return: NULLif fail, else pointer to malloc memory
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int s1_index = 0;
-	int s2_index = 0;
 	char *p;
+	int strlen1, i, c;
 
 	if (s1 == NULL)
 		s1 = "";
-	else if (s2 == NULL)
+
+	if (s2 == NULL)
 		s2 = "";
 
-	while (s1[s1_length] != '\0')
-		s1_index++;
-
-	while (s2_index < n && s2[s2_index] != '\0')
-	{
-		s1[s1_index] = s2[s2_index];
-		s1_index++;
-		s2_index++;
-	}
-
-	s1[s1_index] = '\0';
-
-	p = malloc(s1_index);
+	strlen1 = (unsigned int)_strlen(s1);
+	p = malloc((strlen1 + n + 1) * sizeof(char));
 
 	if (p == NULL)
 		return (NULL);
 
+	for (i = 0, c = 0; i < (strlen1 + n); i++)
+	{
+		if (i < strlen1)
+			p[i] = s1[i];
+		else
+			p[i] = s2[c++];
+	}
+
+	p[i] = '\0';
+
 	return (p);
+}
+
+/**
+ * _strlen - find length of string
+ * @s: string
+ * Return: length of string
+ */
+
+
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+
+	return (i);
 }
