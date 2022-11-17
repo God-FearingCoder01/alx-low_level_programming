@@ -15,46 +15,47 @@ char *str_cpy(char *dest, char *src);
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_name;
-	char *copy_name, *copy_owner;
-	unsigned int x, name_len = 0, owner_len = 0;
+	struct dog *doge;
+	int i, j, k;
+	char *n, *o;
 
-	new_name = malloc(sizeof(dog_t));
+	doge = malloc(sizeof(struct dog));
 
-	if (name == NULL)
+	if (doge == NULL)
 		return (NULL);
 
-	if (name == NULL || age <= 0 || owner == NULL)
+	for (i = 0; name[i] != '\0'; i++)
+		;
+
+	for (j = 0; owner[j] != '\0'; j++)
+		;
+
+	n = malloc(sizeof(char) * i + 1);
+
+	if (n == NULL)
 	{
-		free(new_name);
+		free(doge);
 		return (NULL);
 	}
 
-	for (x = 0; name[x] != '\0'; x++)
-		name_len++;
+	o = malloc(sizeof(char) * j + 1);
 
-	for (x = 0; owner[x] != '\0'; x++)
-		owner_len++;
-
-	copy_name = malloc(sizeof(char) * (name_len + 1));
-
-	if (copy_name == NULL)
+	if (o == NULL)
+	{
+		free(n);
+		free(doge);
 		return (NULL);
+	}
 
-	copy_owner = malloc(sizeof(char) * (owner_len + 1));
+	for (k = 0; k <= i; k++)
+		n[k] = name[k];
 
-	if (copy_owner == NULL)
-		return (NULL);
+	for (k = 0; k <= j; k++)
+		o[k] = owner[k];
 
-	for (x = 0; x <= name_len; x++)
-		copy_name[x] = name[x];
+	doge->name = n;
+	doge->age = age;
+	doge->owner = o;
 
-	for (x = 0; x <= owner_len; x++)
-		copy_owner[x] = owner[x];
-
-	new_name->name = copy_name;
-	new_name->owner = copy_owner;
-	new_name->age = age;
-
-	return (new_name);
+	return (doge);
 }
