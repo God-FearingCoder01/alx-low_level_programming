@@ -50,9 +50,6 @@ void print_all(const char * const format, ...)
 		}
 		else
 			continue;
-
-		if (!(format[index] == '\0'))
-			printf(", ");
 	}
 
 	va_end(ap);
