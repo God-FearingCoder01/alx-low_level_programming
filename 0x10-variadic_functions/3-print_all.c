@@ -17,41 +17,42 @@
 
 void print_all(const char * const format, ...)
 {
-	int index = 0;
-	char my_array[] = {'c', 'i', 'f', 's'};
-	int my_index;
-	va_list ap;
-	char *c_v;
+	va_list valist;
+	int n = 0, i = 0;
+	char *sep = ", ";
+	char *str;
 
-	va_start(ap, format);
+	va_start(valist, format);
 
-	while (format[index] != '\0')
+	while (format && format[i])
+		i++;
+
+	while (format && format[n])
 	{
-		my_index = 0;
-
-		while (format[index] != my_array[my_index] && my_index < 4)
-			my_index++;
-
-		index++;
-
-		if (my_index == 0)
-			printf("%c", va_arg(ap, int));
-		else if (my_index == 1)
-			printf("%i", va_arg(ap, int));
-		else if (my_index == 2)
-			printf("%f", va_arg(ap, double));
-		else if (my_index == 3)
+		if (n  == (i - 1))
 		{
-			c_v = va_arg(ap, char *);
-			if (c_v == NULL)
-				printf("(nil)");
-			else
-				printf("%s", c_v);
+			sep = "";
 		}
-		else
-			continue;
+		switch (format[n])
+		{
+		case 'c':
+			printf("%c%s", va_arg(valist, int), sep);
+			break;
+		case 'i':
+			printf("%d%s", va_arg(valist, int), sep);
+			break;
+		case 'f':
+			printf("%f%s", va_arg(valist, double), sep);
+			break;
+		case 's':
+			str = va_arg(valist, char *);
+			if (str == NULL)
+				str = "(nil)";
+			printf("%s%s", str, sep);
+			break;
+		}
+		n++;
 	}
-
-	va_end(ap);
 	printf("\n");
+	va_end(valist);
 }
