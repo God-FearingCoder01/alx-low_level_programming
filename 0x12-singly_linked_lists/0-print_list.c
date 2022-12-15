@@ -31,7 +31,6 @@ size_t print_list(const list_t *h)
 /**
  * print_node - prints a single node of 'list_t'
  *		list.
- * @i: the number of node of in list
  * @h: the node itself
  */
 
