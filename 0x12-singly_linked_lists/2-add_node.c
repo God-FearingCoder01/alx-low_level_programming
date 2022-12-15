@@ -13,9 +13,9 @@
  *		success), otherwise 'NULL'
  */
 
-list_t *add_node(const list_t **head, char *str)
+list_t *add_node(list_t **head, char *str)
 {
-	list_t node = NULL;
+	list_t *node = NULL;
 
 	if (head)
 	{
