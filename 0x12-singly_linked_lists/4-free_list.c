@@ -19,5 +19,10 @@ void free_list(list_t *head)
 			free(head);
 			free_list(new_head);
 		}
+		else
+		{
+			free((*head).str);
+			free(head);
+		}
 	}
 }
