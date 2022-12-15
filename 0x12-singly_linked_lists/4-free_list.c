@@ -8,10 +8,16 @@
 
 void free_list(list_t *head)
 {
+	list_t *new_head = NULL;
+
 	if (head)
 	{
 		if ((*head).next)
-			free_list(head);
-		free(head);
+		{
+			new_head = (*head).next;
+			free((*head).str);
+			free(head);
+			free_list(new_head);
+		}
 	}
 }
