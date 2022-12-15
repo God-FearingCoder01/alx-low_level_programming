@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * print_list - print all elements of `list_t` list
@@ -37,23 +38,6 @@ size_t print_list(const list_t *h)
 void print_node(const list_t *h)
 {
 	printf("[%i] %s\n", (h->str) ?
-		_strlen(h->str) : 0, (h->str) ?
+		strlen(h->str) : 0, (h->str) ?
 		(h->str) : ("(nil)"));
-}
-
-/**
- * _strlen - counts the number of characters in a
- *		string
- * @s: string to determine number of characters
- *
- * Return: number of characters in @s
- */
-
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0; s[i]; i++)
-		;
-	return (i);
 }
