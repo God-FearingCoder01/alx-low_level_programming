@@ -37,7 +37,7 @@ size_t print_list(const list_t *h)
 
 void print_node(const list_t *h)
 {
-	printf("[%i] %s\n", (h->str) ?
+	printf("[%lu] %s\n", (h->str) ?
 		strlen(h->str) : 0, (h->str) ?
 		(h->str) : ("(nil)"));
 }
