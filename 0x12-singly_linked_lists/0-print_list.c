@@ -12,7 +12,10 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t i;
+	size_t i = 0;
+
+	if (!h)
+		return (i);
 
 	for (i = 1; h->next; i++)
 	{
@@ -51,8 +54,7 @@ int _strlen(char *s)
 {
 	int i;
 
-	for (i = 0; s[i]; i++);
+	for (i = 0; s[i]; i++)
 		;
-	
 	return (i);
 }
