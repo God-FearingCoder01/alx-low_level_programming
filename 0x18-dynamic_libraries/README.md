@@ -138,7 +138,7 @@ julien@ubuntu:~/0x18. Dynamic libraries$
 
  - GitHub repository: ```alx-low_level_programming```
  - Directory: ```0x18-dynamic_libraries```
- - File: ```1-create_dynamic_lib.sh```
+ - File: [```1-create_dynamic_lib.sh```](https://github.com/God-FearingCoder01/alx-low_level_programming/blob/master/0x18-dynamic_libraries/1-create_dynamic_lib.sh)
 
 ## Advanced Tasks
 ### 2. Let's call C functions from Python
