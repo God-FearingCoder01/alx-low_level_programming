@@ -189,7 +189,7 @@ julien@ubuntu:~/0x18$
 
  - GitHub repository: ```alx-low_level_programming```
  - Directory: ```0x18-dynamic_libraries```
- - File: ```100-operations.so```
+ - File: [```100-operations.so```](https://github.com/God-FearingCoder01/alx-low_level_programming/blob/master/0x18-dynamic_libraries/100-operations.so)
 
 ### 3. Code injection: Win the Giga Millions!
 I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. If you could run two commands on the same server where the Giga Millions program runs, could you make me win the Jackpot?
