@@ -97,7 +97,7 @@ julien@ubuntu:~/0x18. Dynamic libraries$
 
  - GitHub repository: ```alx-low_level_programming```
  - Directory: ```0x18-dynamic_libraries```
- - File: ```libdynamic.so```, ```main.h```
+ - File: [```libdynamic.so```](https://github.com/God-FearingCoder01/alx-low_level_programming/blob/master/0x18-dynamic_libraries/1-create_dynamic_lib.sh), [```main.h```](https://github.com/God-FearingCoder01/alx-low_level_programming/blob/master/0x18-dynamic_libraries/main.h)
 
 ### 1. Without libraries what have we? We have no past and no future
 Create a script that creates a dynamic library called ```liball.so``` from all the ```.c``` files that are in the current directory.
