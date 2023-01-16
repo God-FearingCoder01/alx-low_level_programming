@@ -1,3 +1,4 @@
-# DECRIPTION OF THIS REPOSITORY
+# alx-low_level_programming
 
-To house work  on the ````Hello World.C```` project.
+## [0x00-hello_world](https://github.com/God-FearingCoder01/alx-low_level_programming/tree/master/0x00-hello_world)
+
