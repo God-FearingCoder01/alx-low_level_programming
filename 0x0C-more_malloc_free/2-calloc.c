@@ -2,11 +2,15 @@
 #include <stdlib.h>
 
 /**
- * _calloc - allocates memory for an array using malloc
- * @nmembb: number of members
- * @size: size
+ * _calloc - allocates memory for an array,
+ *	using malloc
+ * @nmembb: number of members of the array
+ * @size: size of each member of the array,
+ *	in bytes
  *
- * Return: memory address, otherwise NULL
+ * Return: pointer to the allocated memory,
+ *	OTHERWISE NULL if nmemb or size is 0
+ *	OR if malloc fails
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -23,7 +27,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (p == NULL)
 		return (NULL);
 
-	while (i < l)
+	while (i < nmemb)
 	{
 		p[i] = 0;
 		i++;
