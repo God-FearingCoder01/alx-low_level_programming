@@ -12,6 +12,7 @@
 
 int *array_range(int min, int max)
 {
+	int i = 0;
 	int *p;
 	int nmemb = (max - min) + 1;
 
@@ -22,6 +23,13 @@ int *array_range(int min, int max)
 
 	if (p == NULL)
 		return NULL;
+
+	while (min > max)
+	{
+		p[i] = min;
+		min++;
+		i++;
+	}
 
 	return (p);
 }
