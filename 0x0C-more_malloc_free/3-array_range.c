@@ -4,10 +4,12 @@
 /**
  * array_range - creates an array of integers
  * @min: the smallest value the arrayshould hold
- * @max: the biggest integer value the array should be able to hold
+ * @max: the biggest integer value the array
+ *	should be able to hold
  *
- * Return: the pointer to the newly created array,
- *	OTHERWISE NULL if min > max OR if malloc fails
+ * Return: the pointer to the newly created
+ *	array, OTHERWISE NULL if min > max
+ *	OR if malloc fails
  */
 
 int *array_range(int min, int max)
